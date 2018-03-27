@@ -5,4 +5,4 @@
 
   tasks:
     - name: test action
-      action: commans echo "Hello"
+      action: command echo "Hello"
