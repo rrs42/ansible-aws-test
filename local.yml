@@ -1,8 +1,10 @@
 ---
 
 - hosts: localhost
+  connection: local
   user: root
-
   tasks:
     - name: test action
       action: command echo "Hello"
+      register: foo
+    - debug: msg="The echo was {{ foo.stdout }}"
